@@ -28,6 +28,12 @@ const CertificationsSection = () => {
       provider: "Udemy",
       category: "Version Control",
       color: "bg-orange-500"
+    },
+    {
+      title: "API Development",
+      provider: "YouTube",
+      category: "Backend",
+      color: "bg-red-500"
     }
   ];
 
