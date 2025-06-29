@@ -27,9 +27,13 @@ const HeroSection = () => {
     <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
       <div className="container mx-auto px-4 text-center">
         <div className="animate-fade-in">
-          {/* Profile Picture Placeholder */}
-          <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white text-4xl font-bold shadow-lg">
-            AH
+          {/* Profile Picture */}
+          <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden shadow-lg ring-4 ring-blue-600/20">
+            <img 
+              src="https://i.postimg.cc/jqz6X1DV/Ansar.png" 
+              alt="Ansar Ul Haq"
+              className="w-full h-full object-cover"
+            />
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold text-gray-800 dark:text-white mb-6">

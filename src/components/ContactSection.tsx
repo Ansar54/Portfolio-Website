@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { MapPin, Mail, Github, Linkedin } from "lucide-react";
+import emailjs from '@emailjs/browser';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -22,11 +23,25 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      // TODO: Replace this with actual Firebase Firestore integration
-      // For now, we'll simulate a successful submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      console.log('Form submitted:', formData);
+      // EmailJS configuration
+      const serviceId = 'service_9llwphj';
+      const templateId = 'template_j7s3zle';
+      const publicKey = 'y-Jg7asEtsD8d6fNm';
+
+      // Send email using EmailJS
+      const result = await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_name: 'Ansar Ul Haq',
+        },
+        publicKey
+      );
+
+      console.log('Email sent successfully:', result);
       
       toast({
         title: "Message sent successfully!",
@@ -35,6 +50,7 @@ const ContactSection = () => {
       
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
+      console.error('EmailJS error:', error);
       toast({
         title: "Error sending message",
         description: "Please try again later or contact me directly via email.",
