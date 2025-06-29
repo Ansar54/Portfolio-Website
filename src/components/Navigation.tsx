@@ -57,6 +57,20 @@ const Navigation = () => {
             </Button>
             <Button 
               variant="ghost" 
+              onClick={() => scrollToSection('education')}
+              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+            >
+              Education
+            </Button>
+            <Button 
+              variant="ghost" 
+              onClick={() => scrollToSection('certifications')}
+              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+            >
+              Certifications
+            </Button>
+            <Button 
+              variant="ghost" 
               onClick={() => scrollToSection('contact')}
               className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
             >

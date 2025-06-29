@@ -4,6 +4,8 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
+import EducationSection from "@/components/EducationSection";
+import CertificationsSection from "@/components/CertificationsSection";
 import ContactSection from "@/components/ContactSection";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react";
@@ -55,6 +57,8 @@ const Index = () => {
         <HeroSection />
         <AboutSection />
         <ProjectsSection />
+        <EducationSection />
+        <CertificationsSection />
         <ContactSection />
       </main>
       

@@ -6,38 +6,24 @@ import { Github, ArrowUp } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "E-Commerce API",
-      description: "A comprehensive REST API built with FastAPI for an e-commerce platform, featuring user authentication, product management, and order processing.",
-      technologies: ["FastAPI", "PostgreSQL", "JWT", "SQLAlchemy"],
-      github: "#",
+      title: "SocialNest",
+      description: "A comprehensive social media application built with Django and PostgreSQL, featuring user authentication, post management, and social interactions.",
+      technologies: ["Django", "PostgreSQL", "Python", "HTML/CSS"],
+      github: "https://github.com/Ansar54/SocialNest",
       demo: "#"
     },
     {
-      title: "Task Management System",
-      description: "A Django-based web application for team task management with real-time updates, role-based permissions, and detailed analytics.",
-      technologies: ["Django", "MySQL", "Redis", "Celery"],
-      github: "#",
+      title: "Open Vetting",
+      description: "An AI-powered tool for job candidate evaluation and recruitment processes, streamlining hiring decisions with intelligent assessment capabilities.",
+      technologies: ["Python", "AI/ML", "FastAPI", "PostgreSQL"],
+      github: "https://github.com/Ansar54/open_vetting",
       demo: "#"
     },
     {
-      title: "Data Analytics Dashboard",
-      description: "A Python backend service that processes large datasets and provides APIs for a React dashboard, featuring data visualization and reporting.",
-      technologies: ["Python", "FastAPI", "Pandas", "PostgreSQL"],
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "Authentication Microservice",
-      description: "A scalable authentication service built with FastAPI, supporting OAuth2, JWT tokens, and integration with multiple databases.",
-      technologies: ["FastAPI", "OAuth2", "Docker", "MongoDB"],
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "API Gateway Service",
-      description: "A high-performance API gateway built with Python that handles routing, rate limiting, and authentication for microservices architecture.",
-      technologies: ["Python", "FastAPI", "Redis", "Docker"],
-      github: "#",
+      title: "Health Vault",
+      description: "FastAPI-based health data management system with real-time access, secure data storage, and comprehensive health monitoring APIs.",
+      technologies: ["FastAPI", "Python", "PostgreSQL", "REST APIs"],
+      github: "https://github.com/Ansar54/Health_vault",
       demo: "#"
     }
   ];

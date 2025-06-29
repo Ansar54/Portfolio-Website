@@ -1,8 +1,15 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, MapPin } from "lucide-react";
 
 const HeroSection = () => {
+  const scrollToContact = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const scrollToAbout = () => {
     const element = document.getElementById('about');
     if (element) {
@@ -20,15 +27,22 @@ const HeroSection = () => {
     <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
       <div className="container mx-auto px-4 text-center">
         <div className="animate-fade-in">
+          {/* Profile Picture Placeholder */}
+          <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white text-4xl font-bold shadow-lg">
+            AH
+          </div>
+          
           <h1 className="text-5xl md:text-7xl font-bold text-gray-800 dark:text-white mb-6">
             Ansar Ul Haq
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-4 max-w-3xl mx-auto">
             Python Backend Developer | FastAPI & Django Enthusiast
           </p>
-          <p className="text-lg text-gray-500 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
-            Building robust, scalable backend solutions with modern Python frameworks
-          </p>
+          
+          <div className="flex items-center justify-center text-gray-500 dark:text-gray-400 mb-10">
+            <MapPin className="h-5 w-5 mr-2" />
+            <span className="text-lg">Islamabad, Pakistan</span>
+          </div>
           
           <div className="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center">
             <Button 
@@ -41,10 +55,10 @@ const HeroSection = () => {
             <Button 
               variant="outline" 
               size="lg"
-              onClick={scrollToAbout}
+              onClick={scrollToContact}
               className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 text-lg transition-all duration-300"
             >
-              Learn More
+              Contact Me
             </Button>
           </div>
         </div>

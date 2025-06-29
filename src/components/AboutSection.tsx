@@ -8,7 +8,12 @@ const AboutSection = () => {
     { name: "Django", color: "bg-green-600" },
     { name: "PostgreSQL", color: "bg-blue-600" },
     { name: "MySQL", color: "bg-orange-500" },
+    { name: "API Testing", color: "bg-purple-500" },
+    { name: "OOP", color: "bg-indigo-500" },
     { name: "Git", color: "bg-red-500" },
+    { name: "GitHub", color: "bg-gray-700" },
+    { name: "n8n", color: "bg-pink-500" },
+    { name: "Prompt Engineering", color: "bg-yellow-500" },
   ];
 
   return (
@@ -24,17 +29,10 @@ const AboutSection = () => {
         <div className="max-w-4xl mx-auto">
           <Card className="bg-gray-50 dark:bg-gray-800 border-0 shadow-lg">
             <CardContent className="p-8 md:p-12">
-              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                I'm a passionate backend developer with expertise in Python and modern web frameworks. 
-                My journey in software development has been driven by a love for creating efficient, 
-                scalable solutions that power modern applications. I specialize in building robust APIs, 
-                designing database architectures, and implementing clean, maintainable code.
-              </p>
-              
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-10">
-                With experience in FastAPI and Django, I enjoy working on challenging problems that 
-                require innovative solutions. I'm always eager to learn new technologies and contribute 
-                to projects that make a meaningful impact.
+                I'm an innovative backend developer with expertise in Python, Django, and FastAPI. 
+                I'm passionate about building scalable and high-performance backend systems and 
+                collaborating with cross-functional teams to create cutting-edge products.
               </p>
               
               <div>

@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import { MapPin, Mail, Github, Linkedin } from "lucide-react";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -64,77 +65,149 @@ const ContactSection = () => {
           </p>
         </div>
         
-        <div className="max-w-2xl mx-auto">
-          <Card className="bg-gray-50 dark:bg-gray-800 border-0 shadow-lg">
-            <CardHeader>
-              <CardTitle className="text-2xl text-gray-800 dark:text-white">
-                Send me a message
-              </CardTitle>
-              <CardDescription className="text-gray-600 dark:text-gray-300">
-                Fill out the form below and I'll get back to you as soon as possible.
-              </CardDescription>
-            </CardHeader>
-            
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <Label htmlFor="name" className="text-gray-700 dark:text-gray-300">
-                    Name
-                  </Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="mt-1 bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600"
-                    placeholder="Your full name"
-                  />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          {/* Contact Information */}
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-6">
+                Contact Information
+              </h3>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-4">
+                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                    <MapPin className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-gray-800 dark:text-white font-medium">Location</p>
+                    <p className="text-gray-600 dark:text-gray-300">Islamabad, Pakistan</p>
+                  </div>
                 </div>
                 
-                <div>
-                  <Label htmlFor="email" className="text-gray-700 dark:text-gray-300">
-                    Email
-                  </Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="mt-1 bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600"
-                    placeholder="your.email@example.com"
-                  />
+                <div className="flex items-center space-x-4">
+                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                    <Mail className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-gray-800 dark:text-white font-medium">Email</p>
+                    <a 
+                      href="mailto:ansarulhaq.dev@gmail.com"
+                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                    >
+                      ansarulhaq.dev@gmail.com
+                    </a>
+                  </div>
                 </div>
                 
-                <div>
-                  <Label htmlFor="message" className="text-gray-700 dark:text-gray-300">
-                    Message
-                  </Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    required
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={5}
-                    className="mt-1 bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600"
-                    placeholder="Tell me about your project or just say hello!"
-                  />
+                <div className="flex items-center space-x-4">
+                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                    <Github className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-gray-800 dark:text-white font-medium">GitHub</p>
+                    <a 
+                      href="https://github.com/Ansar54"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                    >
+                      github.com/Ansar54
+                    </a>
+                  </div>
                 </div>
                 
-                <Button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg transition-all duration-300 hover:scale-105"
-                >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+                <div className="flex items-center space-x-4">
+                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                    <Linkedin className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-gray-800 dark:text-white font-medium">LinkedIn</p>
+                    <a 
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                    >
+                      LinkedIn Profile
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Contact Form */}
+          <div>
+            <Card className="bg-gray-50 dark:bg-gray-800 border-0 shadow-lg">
+              <CardHeader>
+                <CardTitle className="text-2xl text-gray-800 dark:text-white">
+                  Send me a message
+                </CardTitle>
+                <CardDescription className="text-gray-600 dark:text-gray-300">
+                  Fill out the form below and I'll get back to you as soon as possible.
+                </CardDescription>
+              </CardHeader>
+              
+              <CardContent>
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div>
+                    <Label htmlFor="name" className="text-gray-700 dark:text-gray-300">
+                      Name
+                    </Label>
+                    <Input
+                      id="name"
+                      name="name"
+                      type="text"
+                      required
+                      value={formData.name}
+                      onChange={handleChange}
+                      className="mt-1 bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600"
+                      placeholder="Your full name"
+                    />
+                  </div>
+                  
+                  <div>
+                    <Label htmlFor="email" className="text-gray-700 dark:text-gray-300">
+                      Email
+                    </Label>
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      required
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="mt-1 bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600"
+                      placeholder="your.email@example.com"
+                    />
+                  </div>
+                  
+                  <div>
+                    <Label htmlFor="message" className="text-gray-700 dark:text-gray-300">
+                      Message
+                    </Label>
+                    <Textarea
+                      id="message"
+                      name="message"
+                      required
+                      value={formData.message}
+                      onChange={handleChange}
+                      rows={5}
+                      className="mt-1 bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600"
+                      placeholder="Tell me about your project or just say hello!"
+                    />
+                  </div>
+                  
+                  <Button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg transition-all duration-300 hover:scale-105"
+                  >
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
