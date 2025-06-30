@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -68,25 +67,25 @@ const ContactSection = () => {
     <section id="contact" className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-6 animate-fade-in-up">
             Get In Touch
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8 animate-fade-in-up animate-stagger-1"></div>
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto animate-fade-in-up animate-stagger-2">
             I'm always interested in new opportunities and collaborations. Let's discuss your project!
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="space-y-8 animate-slide-in-left">
             <div>
               <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-6">
                 Contact Information
               </h3>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-4">
-                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+              <div className="space-y-6">
+                <div className="flex items-center space-x-4 hover-lift transition-all duration-300">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
                     <MapPin className="h-5 w-5 text-white" />
                   </div>
                   <div>
@@ -95,23 +94,23 @@ const ContactSection = () => {
                   </div>
                 </div>
                 
-                <div className="flex items-center space-x-4">
-                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                <div className="flex items-center space-x-4 hover-lift transition-all duration-300">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
                     <Mail className="h-5 w-5 text-white" />
                   </div>
                   <div>
                     <p className="text-gray-800 dark:text-white font-medium">Email</p>
                     <a 
                       href="mailto:ansarulhaq.dev@gmail.com"
-                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                      className="text-blue-600 dark:text-blue-400 hover:underline transition-all duration-300"
                     >
                       ansarulhaq.dev@gmail.com
                     </a>
                   </div>
                 </div>
                 
-                <div className="flex items-center space-x-4">
-                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                <div className="flex items-center space-x-4 hover-lift transition-all duration-300">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
                     <Github className="h-5 w-5 text-white" />
                   </div>
                   <div>
@@ -120,24 +119,24 @@ const ContactSection = () => {
                       href="https://github.com/Ansar54"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                      className="text-blue-600 dark:text-blue-400 hover:underline transition-all duration-300"
                     >
                       github.com/Ansar54
                     </a>
                   </div>
                 </div>
                 
-                <div className="flex items-center space-x-4">
-                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                <div className="flex items-center space-x-4 hover-lift transition-all duration-300">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
                     <Linkedin className="h-5 w-5 text-white" />
                   </div>
                   <div>
                     <p className="text-gray-800 dark:text-white font-medium">LinkedIn</p>
                     <a 
-                      href="#"
+                      href="https://linkedin.com/in/ansar-ul-haq-a455b0241"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                      className="text-blue-600 dark:text-blue-400 hover:underline transition-all duration-300"
                     >
                       LinkedIn Profile
                     </a>
@@ -148,8 +147,8 @@ const ContactSection = () => {
           </div>
           
           {/* Contact Form */}
-          <div>
-            <Card className="bg-gray-50 dark:bg-gray-800 border-0 shadow-lg">
+          <div className="animate-slide-in-right">
+            <Card className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 border-0 shadow-2xl hover-lift">
               <CardHeader>
                 <CardTitle className="text-2xl text-gray-800 dark:text-white">
                   Send me a message
