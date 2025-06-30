@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowDown, MapPin } from "lucide-react";
 
@@ -18,9 +17,16 @@ const HeroSection = () => {
   };
 
   const handleDownloadResume = () => {
-    // This will be connected to your Firebase Storage file
-    // For now, it shows an alert - you can replace this with your actual resume URL
-    alert("Resume download will be available once you upload your PDF to Firebase Storage");
+    const resumeUrl = 'https://drive.google.com/uc?export=download&id=1vUvykPx4YI7V3n4-F9JxyHzwfHS_E9cp';
+    
+    // Create a temporary link element to trigger download
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'Ansar_Ul_Haq_Resume.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
