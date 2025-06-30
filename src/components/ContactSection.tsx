@@ -28,16 +28,12 @@ const ContactSection = () => {
       const templateId = 'template_j7s3zle';
       const publicKey = 'y-Jg7asEtsD8d6fNm';
 
-      // Send email using EmailJS
-      const result = await emailjs.send(
+      // Send email using EmailJS with form reference
+      const form = e.target as HTMLFormElement;
+      const result = await emailjs.sendForm(
         serviceId,
         templateId,
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message,
-          to_name: 'Ansar Ul Haq',
-        },
+        form,
         publicKey
       );
 
@@ -164,7 +160,7 @@ const ContactSection = () => {
               </CardHeader>
               
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form id="contact-form" onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <Label htmlFor="name" className="text-gray-700 dark:text-gray-300">
                       Name
