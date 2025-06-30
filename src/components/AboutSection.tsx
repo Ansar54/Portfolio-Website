@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 
 const AboutSection = () => {
@@ -6,10 +5,15 @@ const AboutSection = () => {
     { name: "Python", color: "bg-gradient-to-r from-blue-500 to-blue-600" },
     { name: "FastAPI", color: "bg-gradient-to-r from-green-500 to-green-600" },
     { name: "Django", color: "bg-gradient-to-r from-green-600 to-green-700" },
+    { name: "SQLAlchemy", color: "bg-gradient-to-r from-red-500 to-red-600" },
+    { name: "Pydantic", color: "bg-gradient-to-r from-teal-500 to-teal-600" },
     { name: "PostgreSQL", color: "bg-gradient-to-r from-blue-600 to-blue-700" },
     { name: "MySQL", color: "bg-gradient-to-r from-orange-500 to-orange-600" },
     { name: "API Testing", color: "bg-gradient-to-r from-purple-500 to-purple-600" },
+    { name: "API Integration", color: "bg-gradient-to-r from-cyan-500 to-cyan-600" },
     { name: "OOP", color: "bg-gradient-to-r from-indigo-500 to-indigo-600" },
+    { name: "Data Structures & Algo", color: "bg-gradient-to-r from-violet-500 to-violet-600" },
+    { name: "Linux", color: "bg-gradient-to-r from-gray-600 to-gray-700" },
     { name: "Git", color: "bg-gradient-to-r from-red-500 to-red-600" },
     { name: "GitHub", color: "bg-gradient-to-r from-gray-700 to-gray-800" },
     { name: "n8n", color: "bg-gradient-to-r from-pink-500 to-pink-600" },
