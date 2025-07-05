@@ -69,7 +69,7 @@ const ContactSection = () => {
       title: "WhatsApp",
       description: "Quick chat for immediate queries",
       icon: MessageCircle,
-      action: () => window.open("https://wa.me/923135551742?text=Hi%20Ansar,%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project", "_blank"),
+      action: () => window.open("https://wa.me/923100900266?text=Hi%20Ansar,%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project", "_blank"),
       color: "from-green-500 to-green-600",
       buttonText: "Chat on WhatsApp"
     },
@@ -142,74 +142,7 @@ const ContactSection = () => {
           ))}
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Contact Information */}
-          <div className="space-y-8 animate-slide-in-left">
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-6">
-                Contact Information
-              </h3>
-              <div className="space-y-6">
-                <div className="flex items-center space-x-4 hover-lift transition-all duration-300">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
-                    <MapPin className="h-5 w-5 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-gray-800 dark:text-white font-medium">Location</p>
-                    <p className="text-gray-600 dark:text-gray-300">Islamabad, Pakistan</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-4 hover-lift transition-all duration-300">
-                  <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-lg">
-                    <Phone className="h-5 w-5 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-gray-800 dark:text-white font-medium">Phone</p>
-                    <a 
-                      href="tel:+923135551742"
-                      className="text-blue-600 dark:text-blue-400 hover:underline transition-all duration-300"
-                    >
-                      +92 313 5551742
-                    </a>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-4 hover-lift transition-all duration-300">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
-                    <Mail className="h-5 w-5 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-gray-800 dark:text-white font-medium">Email</p>
-                    <a 
-                      href="mailto:ansarulhaq.dev@gmail.com"
-                      className="text-blue-600 dark:text-blue-400 hover:underline transition-all duration-300"
-                    >
-                      ansarulhaq.dev@gmail.com
-                    </a>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-4 hover-lift transition-all duration-300">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
-                    <Github className="h-5 w-5 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-gray-800 dark:text-white font-medium">GitHub</p>
-                    <a 
-                      href="https://github.com/Ansar54"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 dark:text-blue-400 hover:underline transition-all duration-300"
-                    >
-                      github.com/Ansar54
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
+        <div className="max-w-2xl mx-auto">
           {/* Contact Form */}
           <div className="animate-slide-in-right">
             <Card className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 border-0 shadow-2xl hover-lift">
