@@ -93,7 +93,7 @@ const ContactSection = () => {
       title: "LinkedIn",
       description: "Professional networking & opportunities",
       icon: Linkedin,
-      action: () => window.open("https://linkedin.com/in/ansar-ul-haq-a455b0241", "_blank"),
+      action: () => window.open("https://www.linkedin.com/in/ansar541/", "_blank"),
       color: "from-blue-600 to-blue-700",
       buttonText: "Connect on LinkedIn"
     }

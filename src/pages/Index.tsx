@@ -48,7 +48,7 @@ const Index = () => {
               </a>
               
               <a 
-                href="https://linkedin.com/in/ansar-ul-haq-a455b0241"
+                href="https://www.linkedin.com/in/ansar541/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 hover:scale-110"
