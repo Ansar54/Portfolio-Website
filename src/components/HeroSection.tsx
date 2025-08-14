@@ -18,7 +18,7 @@ const HeroSection = () => {
   };
 
   const handleDownloadResume = () => {
-    const resumeUrl = 'https://drive.google.com/uc?export=download&id=1wyHVH-qH1YmpBYxmOFdDUrSVQS7h5WsW';
+    const resumeUrl = 'https://drive.google.com/uc?export=download&id=1Id9wQU_tKSvU8ONFr-TWkflTj_FMGFg_';
     
     // Create a temporary link element to trigger download
     const link = document.createElement('a');
