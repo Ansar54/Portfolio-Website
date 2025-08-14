@@ -3,21 +3,44 @@ import { Card, CardContent } from "@/components/ui/card";
 const AboutSection = () => {
   const technologies = [
     { name: "Python", color: "bg-gradient-to-r from-blue-500 to-blue-600" },
+    { name: "JavaScript", color: "bg-gradient-to-r from-yellow-500 to-yellow-600" },
+    { name: "C", color: "bg-gradient-to-r from-blue-600 to-blue-700" },
+    { name: "C++", color: "bg-gradient-to-r from-blue-700 to-blue-800" },
     { name: "FastAPI", color: "bg-gradient-to-r from-green-500 to-green-600" },
     { name: "Django", color: "bg-gradient-to-r from-green-600 to-green-700" },
+    { name: "HTML", color: "bg-gradient-to-r from-orange-500 to-orange-600" },
+    { name: "CSS", color: "bg-gradient-to-r from-blue-500 to-cyan-500" },
     { name: "SQLAlchemy", color: "bg-gradient-to-r from-red-500 to-red-600" },
     { name: "Pydantic", color: "bg-gradient-to-r from-teal-500 to-teal-600" },
     { name: "PostgreSQL", color: "bg-gradient-to-r from-blue-600 to-blue-700" },
     { name: "MySQL", color: "bg-gradient-to-r from-orange-500 to-orange-600" },
-    { name: "API Testing", color: "bg-gradient-to-r from-purple-500 to-purple-600" },
-    { name: "API Integration", color: "bg-gradient-to-r from-cyan-500 to-cyan-600" },
+    { name: "MongoDB", color: "bg-gradient-to-r from-green-500 to-green-600" },
+    { name: "API Development", color: "bg-gradient-to-r from-purple-500 to-purple-600" },
+    { name: "API Testing", color: "bg-gradient-to-r from-purple-600 to-purple-700" },
+    { name: "REST API Design", color: "bg-gradient-to-r from-indigo-500 to-indigo-600" },
+    { name: "WebSockets", color: "bg-gradient-to-r from-cyan-500 to-cyan-600" },
     { name: "OOP", color: "bg-gradient-to-r from-indigo-500 to-indigo-600" },
     { name: "Data Structures & Algo", color: "bg-gradient-to-r from-violet-500 to-violet-600" },
-    { name: "Linux", color: "bg-gradient-to-r from-gray-600 to-gray-700" },
+    { name: "Docker", color: "bg-gradient-to-r from-blue-400 to-blue-500" },
     { name: "Git", color: "bg-gradient-to-r from-red-500 to-red-600" },
     { name: "GitHub", color: "bg-gradient-to-r from-gray-700 to-gray-800" },
+    { name: "Linux", color: "bg-gradient-to-r from-gray-600 to-gray-700" },
+    { name: "WSL", color: "bg-gradient-to-r from-blue-600 to-blue-700" },
+    { name: "AWS", color: "bg-gradient-to-r from-orange-400 to-orange-500" },
+    { name: "Vercel", color: "bg-gradient-to-r from-gray-800 to-gray-900" },
     { name: "n8n", color: "bg-gradient-to-r from-pink-500 to-pink-600" },
+    { name: "Agentic AI", color: "bg-gradient-to-r from-purple-400 to-purple-500" },
     { name: "Prompt Engineering", color: "bg-gradient-to-r from-yellow-500 to-yellow-600" },
+  ];
+
+  const softSkills = [
+    { name: "Project Management", color: "bg-gradient-to-r from-emerald-500 to-emerald-600" },
+    { name: "Problem-Solving", color: "bg-gradient-to-r from-rose-500 to-rose-600" },
+    { name: "Communication", color: "bg-gradient-to-r from-sky-500 to-sky-600" },
+    { name: "Time Management", color: "bg-gradient-to-r from-amber-500 to-amber-600" },
+    { name: "Adaptability", color: "bg-gradient-to-r from-lime-500 to-lime-600" },
+    { name: "Team Collaboration", color: "bg-gradient-to-r from-teal-600 to-teal-700" },
+    { name: "Attention to Detail", color: "bg-gradient-to-r from-violet-600 to-violet-700" },
   ];
 
   return (
@@ -54,9 +77,9 @@ const AboutSection = () => {
               
               <div className="animate-fade-in-up animate-stagger-3">
                 <h3 className="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-white mb-8 text-center">
-                  Technologies & Skills
+                  Technical Skills
                 </h3>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
                   {technologies.map((tech, index) => (
                     <span
                       key={tech.name}
@@ -64,6 +87,21 @@ const AboutSection = () => {
                       style={{ animationDelay: `${index * 0.1}s` }}
                     >
                       {tech.name}
+                    </span>
+                  ))}
+                </div>
+
+                <h3 className="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-white mb-8 text-center">
+                  Soft Skills
+                </h3>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                  {softSkills.map((skill, index) => (
+                    <span
+                      key={skill.name}
+                      className={`${skill.color} text-white px-4 py-3 rounded-xl text-sm md:text-base font-medium hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-center animate-scale-in`}
+                      style={{ animationDelay: `${(technologies.length + index) * 0.1}s` }}
+                    >
+                      {skill.name}
                     </span>
                   ))}
                 </div>
